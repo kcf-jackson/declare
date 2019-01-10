@@ -1,6 +1,5 @@
 context("Testing type annotation")
 
-library(testthat)
 equal_up_to_sort <- function(x, y) {
   if (!is.null(names(x))) {
     return(expect_equal(x[sort(names(x))], y))

@@ -16,7 +16,7 @@ test_that("Test that type_ls is functioning", {
 
 test_that("Test that type is functioning", {
   f <- function(x, y) { x[1:3, ] * y }
-  f <- declare::type(f, list(y = "numeric"))
+  f <- declare::type(f, y = "numeric")
   x <- matrix(1:9, 3, 3)
   x2 <- as.data.frame(x)
   k <- 5
@@ -26,7 +26,7 @@ test_that("Test that type is functioning", {
 
   # Example 4 - Multiple labels
   f <- function(x, y) { x[1:3, ] * y }
-  f <- declare::type_ls(f, list(x = c("matrix", "data.frame"), y = "numeric"))
+  f <- declare::type(f, x = c("matrix", "data.frame"), y = "numeric")
 
   x <- matrix(1:9, 3, 3)
   x2 <- as.data.frame(x)

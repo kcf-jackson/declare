@@ -2,7 +2,9 @@
 
 Allows user to add optional type annotation to a function via comments. The package uses a simple mechanism, and it is designed such that the annotation may be "switched on and off" as one pleases. This is an experiment of programming in R with stronger type. 
     
-[![Coverage Status](https://img.shields.io/codecov/c/github/<USERNAME>/<REPO>/master.svg)](https://codecov.io/github/<USERNAME>/<REPO>?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/github/kcf-jackson/declare/master.svg)](https://codecov.io/github/kcf-jackson/declare?branch=master)
+    
+    
     
 ## Usage
 
